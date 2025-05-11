@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="CloudPops - Magical floating mini-clouds that bring joy to your space. Customize your own whimsical cloud with colors, scents, and sparkles!">
+    <meta property="og:title" content="CloudPops - Magical Floating Mini-Clouds">
+    <meta property="og:description" content="Customize your own whimsical floating cloud with colors, scents, and sparkles - the future of indoor happiness!">
+    <meta property="og:type" content="website">
+    <title>CloudPops - Magical Floating Mini-Clouds</title>
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50,20 C40,20 40,30 30,30 C15,30 15,50 30,50 C30,50 40,50 50,50 C60,50 70,50 70,50 C85,50 85,30 70,30 C60,30 60,20 50,20 Z' fill='%23FFC0CB' stroke='white' stroke-width='5'/><path d='M55,35 C55,35 65,35 65,45' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <div class="sky-background">
+        <div class="sun-rays"></div>
+        <div class="clouds-container">
+            <!-- Parallax clouds -->
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+            <div class="cloud cloud-5"></div>
+            <div class="balloon balloon-1"></div>
+            <div class="balloon balloon-2"></div>
+            <div class="bird bird-1"></div>
+            <div class="bird bird-2"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">CloudPops</span>
+                <div class="mini-cloud"></div>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <button class="nav-btn" data-section="home">Home</button>
+            <button class="nav-btn" data-section="pick-your-cloud">Pick Your Cloud</button>
+            <button class="nav-btn" data-section="why-cloudpops">Why CloudPops</button>
+            <button class="nav-btn" data-section="customize">Customize</button>
+            <button class="nav-btn" data-section="dream-gallery">Dream Gallery</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">The Future of <span class="highlight">Indoor Happiness</span></h1>
+            <p class="hero-subtitle">Magical floating mini-clouds that bring joy to your space</p>
+            <div class="hero-clouds">
+                <div class="hero-cloud hero-cloud-1"></div>
+                <div class="hero-cloud hero-cloud-2"></div>
+                <div class="hero-cloud hero-cloud-3"></div>
+            </div>
+            <button class="cta-button">Get Your CloudPop <span class="cta-icon">☁️</span></button>
+        </section>
+
+        <section class="cloud-gallery" id="pick-your-cloud">
+            <h2 class="section-title">Pick Your <span class="highlight">Cloud</span></h2>
+            <div class="clouds-grid">
+                <div class="cloud-card" data-scent="Fresh Rain">
+                    <div class="product-cloud rainbow-cloud">
+                        <div class="pop-effect"></div>
+                    </div>
+                    <h3>Rainbow Delight</h3>
+                    <p>A color-changing cloud that cycles through all rainbow hues</p>
+                    <button class="pop-btn">Pop to preview</button>
+                </div>
+                <div class="cloud-card" data-scent="Vanilla">
+                    <div class="product-cloud sunset-cloud">
+                        <div class="pop-effect"></div>
+                    </div>
+                    <h3>Sunset Bliss</h3>
+                    <p>Warm orange and pink hues that create a sunset feel</p>
+                    <button class="pop-btn">Pop to preview</button>
+                </div>
+                <div class="cloud-card" data-scent="Lavender">
+                    <div class="product-cloud lavender-cloud">
+                        <div class="pop-effect"></div>
+                    </div>
+                    <h3>Lavender Dream</h3>
+                    <p>Soft purple tones that help you relax and unwind</p>
+                    <button class="pop-btn">Pop to preview</button>
+                </div>
+                <div class="cloud-card" data-scent="Ocean Breeze">
+                    <div class="product-cloud ocean-cloud">
+                        <div class="pop-effect"></div>
+                    </div>
+                    <h3>Ocean Whimsy</h3>
+                    <p>Blue tones that create a tranquil ocean vibe</p>
+                    <button class="pop-btn">Pop to preview</button>
+                </div>
+                <div class="cloud-card" data-scent="Wildflowers">
+                    <div class="product-cloud spring-cloud">
+                        <div class="pop-effect"></div>
+                    </div>
+                    <h3>Spring Meadow</h3>
+                    <p>Green and yellow tones inspired by spring meadows</p>
+                    <button class="pop-btn">Pop to preview</button>
+                </div>
+                <div class="cloud-card" data-scent="Cotton Candy">
+                    <div class="product-cloud candy-cloud">
+                        <div class="pop-effect"></div>
+                    </div>
+                    <h3>Candy Fluff</h3>
+                    <p>Pink and blue swirls reminiscent of cotton candy</p>
+                    <button class="pop-btn">Pop to preview</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-cloudpops" id="why-cloudpops">
+            <h2 class="section-title">Why <span class="highlight">CloudPops?</span></h2>
+            <div class="story-container">
+                <div class="story-panel">
+                    <div class="story-illustration stressed"></div>
+                    <p>Life can be stressful and gray sometimes...</p>
+                </div>
+                <div class="story-panel">
+                    <div class="story-illustration cloudpop-appears"></div>
+                    <p>Until a CloudPop floats by...</p>
+                </div>
+                <div class="story-panel">
+                    <div class="story-illustration happy-colorful"></div>
+                    <p>And suddenly your world becomes colorful and joyful!</p>
+                </div>
+            </div>
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon mood-icon"></div>
+                    <h3>Mood Enhancer</h3>
+                    <p>Scientifically designed to trigger happiness hormones</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon decor-icon"></div>
+                    <h3>Magical Decor</h3>
+                    <p>Transforms any room into a dreamscape</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon scent-icon"></div>
+                    <h3>Delightful Scents</h3>
+                    <p>Aromatherapy that changes with your mood</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="customize" id="customize">
+            <h2 class="section-title">Customize <span class="highlight">Yours</span></h2>
+            <div class="customize-container">
+                <div class="customize-preview">
+                    <div class="preview-aura"></div>
+                    <div class="preview-cloud"></div>
+                </div>
+                <form class="customize-form">
+                    <div class="form-bubble">
+                        <label for="cloud-color">Cloud Color</label>
+                        <div class="color-options">
+                            <button type="button" class="color-option rainbow"></button>
+                            <button type="button" class="color-option sunset"></button>
+                            <button type="button" class="color-option lavender"></button>
+                            <button type="button" class="color-option ocean"></button>
+                            <button type="button" class="color-option spring"></button>
+                            <button type="button" class="color-option candy"></button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-bubble">
+                        <label for="cloud-size">Cloud Size</label>
+                        <div class="size-slider">
+                            <input type="range" id="cloud-size" min="1" max="3" step="1" value="2">
+                            <div class="size-labels">
+                                <span>Small</span>
+                                <span>Medium</span>
+                                <span>Large</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-bubble">
+                        <label for="cloud-scent">Cloud Scent</label>
+                        <select id="cloud-scent">
+                            <option value="fresh-rain">Fresh Rain</option>
+                            <option value="vanilla">Vanilla Dream</option>
+                            <option value="lavender">Calming Lavender</option>
+                            <option value="ocean">Ocean Breeze</option>
+                            <option value="wildflowers">Wildflowers</option>
+                            <option value="cotton-candy">Cotton Candy</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-bubble">
+                        <label for="sparkle-level">Sparkle Level</label>
+                        <div class="sparkle-options">
+                            <button type="button" class="sparkle-option" data-sparkle="1">✨</button>
+                            <button type="button" class="sparkle-option" data-sparkle="2">✨✨</button>
+                            <button type="button" class="sparkle-option" data-sparkle="3">✨✨✨</button>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="create-btn">Create My CloudPop</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="dream-gallery" id="dream-gallery">
+            <h2 class="section-title">Customer <span class="highlight">Dream Gallery</span></h2>
+            <div class="gallery-carousel">
+                <div class="gallery-slide">
+                    <div class="gallery-image gallery-1"></div>
+                    <div class="gallery-info">
+                        <h3>Sarah's Dreamy Bedroom</h3>
+                        <p>"My CloudPops transformed my room into a magical sanctuary!"</p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <div class="gallery-image gallery-2"></div>
+                    <div class="gallery-info">
+                        <h3>Mark's Creative Studio</h3>
+                        <p>"The perfect companion for late-night inspiration sessions."</p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <div class="gallery-image gallery-3"></div>
+                    <div class="gallery-info">
+                        <h3>Emma's Reading Nook</h3>
+                        <p>"I feel like I'm reading inside a fairytale now!"</p>
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-prev">←</button>
+                    <button class="gallery-next">→</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-clouds">
+            <div class="footer-cloud footer-cloud-1"></div>
+            <div class="footer-cloud footer-cloud-2"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-logo">CloudPops</div>
+            <p>Bringing magic to everyday spaces</p>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy</a>
+            </div>
+            <p class="copyright">© 2023 CloudPops. All rights are in the clouds ☁️</p>
+        </div>
+    </footer>
+
+    <div class="scent-popup">
+        <div class="scent-popup-content">
+            <h3>Experience <span class="scent-name"></span></h3>
+            <div class="scent-cloud"></div>
+            <p class="scent-description"></p>
+            <button class="close-popup">Continue Exploring</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
